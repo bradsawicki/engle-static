@@ -119,21 +119,53 @@
 	margin-bottom: $base;
 }
 
-.home-products__grid .col-1-5 a {
+.home-products__grid a {
+	position: relative;
 	display: block;
 	height: 210px;
 	padding: 20px;
 	background-color: #fff;
-	border: 2px solid #fff;
+	background-repeat: no-repeat;
+	background-position: top right;
 	color: $purple;
 
 	@include bp-min-width($medium) {
 		height: 400px;
+		background-position: bottom right;
 	}
 }
 
-.home-products__grid .col-1-5 a:hover {
-	border-color: $turq;
+.home-products__grid a:hover {
+	box-shadow: inset 2px 2px $turq, inset -2px -2px $turq;
+}
+
+.home-products__grid--light-system a {
+	background-image: $home-product-light-systems;
+	background-size: 176px auto;
+}
+
+.home-products__grid--mobile-carts a {
+	background-image: $home-product-mobile-carts;
+	background-size: 180px auto;
+}
+
+.home-products__grid--utility-centers a {
+	background-image: $home-product-utility-centers;
+	background-size: 200px auto;
+}
+
+.home-products__grid--chair-mount-cupsidors a {
+	background-image: $home-product-chair-mount-cupsidors;
+	background-size: 110px auto;
+}
+
+.home-products__grid--assistant-arms a {
+	background-image: $home-product-assistant-arms;
+	background-size: 200px auto;
+
+	@include bp-min-width($medium) {
+		background-position: right 170px;
+	}
 }
 
 .home-products__footer {
@@ -157,7 +189,7 @@
 
 .home-contact .container {
 	position: relative;
-	padding-top: 0;
+	padding-bottom: $base*4;
 
 	@include bp-min-width($medium) {
 		padding-top: $base*8;

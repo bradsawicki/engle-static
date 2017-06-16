@@ -1,4 +1,10 @@
 
-$img-url: 'dist/images/';
+$img-url: '../../dist/images/';
 
 $bg-home-contact: url("#{$img-url}icon-logo-e.svg");
+
+$home-product-light-systems: url("#{$img-url}product-light-systems.png");
+$home-product-mobile-carts: url("#{$img-url}product-mobile-carts.png");
+$home-product-utility-centers: url("#{$img-url}product-utility-centers.png");
+$home-product-chair-mount-cupsidors: url("#{$img-url}product-chair-mount-cupsidors.png");
+$home-product-assistant-arms: url("#{$img-url}product-assistant-arms.png");
