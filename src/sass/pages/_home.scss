@@ -48,6 +48,9 @@
 
 	@include bp-min-width($medium) {
 		@include vertical-center;
+	}
+
+	@include bp-min-width($xlarge) {
 		padding-left: 82px;
 	}
 }
@@ -230,6 +233,9 @@
 	@include bp-min-width($medium) {
 		padding-top: $base*8;
 		padding-bottom: $base*10;
+	}
+
+	@include bp-min-width($xlarge) {
 		padding-left: 112px;
 	}
 }
