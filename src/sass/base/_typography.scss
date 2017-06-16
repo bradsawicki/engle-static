@@ -75,8 +75,10 @@ em {
 }
 
 .paragraph--large {
-  @include font-size(20px);
-  line-height: 1.2;
+  @include bp-min-width($medium) {
+    @include font-size(20px);
+    line-height: 1.2;
+  }
 }
 
 .body-content h1,

@@ -5,8 +5,7 @@
   margin: 0 auto;
 
   @include bp-max-width($medium) {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: $base*2 15px;
   }
 
   @include bp-min-width($medium) {
