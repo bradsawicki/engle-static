@@ -17,7 +17,13 @@ a {
 
 @mixin btn--turq {
   background: $turq;
-  color: $purple
+  border: 2px solid $turq;
+  color: $purple;
+
+  &:hover {
+    background: transparent;
+    color: $turq;
+  }
 }
 
 @mixin btn--outline {
@@ -27,7 +33,7 @@ a {
 
   &:hover {
     background: $turq;
-    color: $purple
+    color: $purple;
   }
 }
 

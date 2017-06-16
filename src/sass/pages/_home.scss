@@ -1,7 +1,36 @@
 
 .home-hero {
-	background: $purple;
+	overflow: hidden;
+	position: relative;
+	background-color: $purple;
+	background-image: $home-hero-01;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	color: #fff;
+
+	@include bp-min-width($large) {
+		background-position: center left 400px;
+		background-size: auto 100%;
+	}
+}
+
+.home-hero__gradient {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($purple, .5);
+
+	@include bp-min-width($large) {
+		width: calc(100% - 400px);
+		left: 400px;
+		right: 200px;
+		background: linear-gradient(to right, $purple, transparent);
+	}
 }
 
 .home-hero .container {
@@ -15,16 +44,17 @@
 }
 
 .home-hero__content {
-	max-width: 640px;
+	max-width: 722px;
 
 	@include bp-min-width($medium) {
 		@include vertical-center;
+		padding-left: 82px;
 	}
 }
 
 .home-hero__title {
 	@include font-size(36px);
-	margin-bottom: 12px;
+	margin-bottom: 18px;
 	font-style: italic;
 	font-weight: $weight-bold;
 	text-transform: uppercase;
@@ -37,6 +67,10 @@
 
 .home-hero__subtitle {
 	margin-bottom: $base;
+
+	@include bp-min-width($medium) {
+		margin-bottom: 30px;
+	}
 }
 
 .home-perform {
@@ -122,16 +156,16 @@
 .home-products__grid a {
 	position: relative;
 	display: block;
-	height: 210px;
+	height: 220px;
 	padding: 20px;
 	background-color: #fff;
 	background-repeat: no-repeat;
-	background-position: top right;
+	background-position: right top;
 	color: $purple;
 
 	@include bp-min-width($medium) {
 		height: 400px;
-		background-position: bottom right;
+		background-position: right bottom;
 	}
 }
 
@@ -157,11 +191,13 @@
 .home-products__grid--chair-mount-cupsidors a {
 	background-image: $home-product-chair-mount-cupsidors;
 	background-size: 110px auto;
+	background-position-y: 20px;
 }
 
 .home-products__grid--assistant-arms a {
 	background-image: $home-product-assistant-arms;
 	background-size: 200px auto;
+	background-position-y: 20px;
 
 	@include bp-min-width($medium) {
 		background-position: right 170px;
