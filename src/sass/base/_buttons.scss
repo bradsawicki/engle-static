@@ -1,0 +1,53 @@
+
+a {
+  @include global-transition(.1s);
+
+	&:hover {
+	}
+}
+
+@mixin btn {
+  @include font-size(15px);
+  display: inline-block;
+  padding: .6em 2em;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+@mixin btn--turq {
+  background: $turq;
+  color: $purple
+}
+
+@mixin btn--outline {
+  background: transparent;
+  border: 2px solid $turq;
+  color: $turq;
+
+  &:hover {
+    background: $turq;
+    color: $purple
+  }
+}
+
+.btn {
+  @include btn;
+}
+
+.btn--turq {
+  @include btn--turq;
+}
+
+.btn--outline {
+  @include btn--outline;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  @include global-transition(.1s);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

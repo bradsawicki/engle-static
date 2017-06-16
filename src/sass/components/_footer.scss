@@ -1,0 +1,64 @@
+
+.site-footer {
+	color: $grey;
+}
+
+.site-footer a {
+	color: $grey;
+}
+
+.site-footer a:hover {
+	color: $purple;
+}
+
+.site-footer .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: $base*2;
+	padding-bottom: $base*2;
+}
+
+.footer-nav {
+	display: flex;
+}
+
+.footer-nav ul {
+	padding-right: 60px;
+}
+
+.footer-nav a {
+	@include font-size(15px);
+  display: block;
+  color: $grey;
+	line-height: 2;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+}
+
+.footer-contact {
+	@include font-size(15px);
+	line-height: 2;
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+}
+
+.footer-contact h4 {
+	@include font-size(15px);
+	line-height: 2;
+}
+
+.footer-contact__address {
+	margin-bottom: $base;
+}
+
+.footer-contact a {
+	color: $grey;
+}
+
+.footer-copyright {
+	@include font-size(12px);
+	padding-top: $base*2;
+	width: 100%;
+	text-transform: uppercase;
+}

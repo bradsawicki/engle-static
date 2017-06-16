@@ -1,0 +1,135 @@
+
+.main-nav {
+  @include bp-min-width($xlarge) {
+    background: $purple;
+  }
+
+  @include bp-min-width($xlarge) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+}
+
+.main-nav .menu {
+  @include bp-max-width($medium) {
+    display: none;
+    background: $purple;
+  }
+
+  @include bp-min-width($medium) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-nav .menu.js-is-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav li {
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    margin: 0 20px;
+  }
+
+  @include bp-min-width($xlarge) {
+    margin: 0 35px;
+  }
+}
+
+.main-nav li:nth-child(3) {
+  @include bp-min-width($xlarge) {
+    margin-right: 200px;
+  }
+}
+
+.main-nav .menu a {
+  @include font-size(15px);
+  display: block;
+  color: #fff;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+
+  @include bp-min-width($medium) {
+    border-bottom: 2px solid $purple;
+  }
+
+  @include bp-max-width($medium) {
+    @include font-size(21px);
+    line-height: 2;
+  }
+}
+
+.main-nav a:hover {
+  @include bp-min-width($medium) {
+    border-color: $turq;
+  }
+}
+
+.nav-toggle {
+  @include font-size(15px);
+  transition: none;
+  right: 20px;
+  z-index: 100;
+  display: block;
+  border-bottom: 2px solid $purple;
+  color: #fff;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+
+  @include bp-min-width($medium) {
+    display: none;
+  }
+}
+
+.nav-toggle:not(.js-is-active) {
+  @include vertical-center;
+}
+
+.nav-toggle.js-is-active {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 36px;
+  height: 36px;
+}
+
+.js-is-active .nav-toggle__label {
+  display: none;
+}
+
+.nav-toggle.js-is-active:before,
+.nav-toggle.js-is-active:after {
+  content: '';
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+
+.nav-toggle.js-is-active:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.nav-toggle.js-is-active:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

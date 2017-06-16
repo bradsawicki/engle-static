@@ -1,0 +1,32 @@
+
+$xlarge:  1200px;
+$large:   1000px;
+$medium:  800px;
+$small:   600px;
+$xsmall:  440px;
+$tiny:    350px;
+
+@function calculateEm($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1em;
+}
+
+@mixin bp-max-width($point) {
+	@media (max-width: calculateEm($point) - calculateEm(1px)) { @content; }
+}
+
+@mixin bp-max-height($point) {
+	@media (max-height: calculateEm($point) - calculateEm(1px)) { @content; }
+}
+
+@mixin bp-min-width($point) {
+	@media (min-width: calculateEm($point)) { @content; }
+}
+
+@mixin bp-min-height($point) {
+	@media (min-height: calculateEm($point)) { @content; }
+}
+
+@mixin bp-min-max($min, $max) {
+	@media (min-width: calculateEm($min)) and (max-width: calculateEm($max) - calculateEm(1px)) { @content; }
+}

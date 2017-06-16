@@ -1,0 +1,157 @@
+
+.home-hero {
+	background: $purple;
+	color: #fff;
+}
+
+.home-hero .container {
+	position: relative;
+	height: 720px;
+}
+
+.home-hero__content {
+	@include vertical-center;
+	max-width: 640px;
+}
+
+.home-hero__title {
+	@include font-size(56px);
+	margin-bottom: 12px;
+	font-style: italic;
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+
+	@include bp-min-width($medium) {
+		padding-right: 80px;
+	}
+}
+
+.home-hero__subtitle {
+	margin-bottom: $base;
+}
+
+.home-perform {
+	color: $purple;
+}
+
+.home-perform .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*3;
+		padding-bottom: $base*3;
+	}
+}
+
+.home-perform .section-title {
+	@include bp-min-width($medium) {
+		margin-bottom: $base*3;
+	}
+}
+
+.home-perform__grid {
+	text-align: center;
+}
+
+.home-perform__grid h3 {
+	margin-bottom: 6px;
+}
+
+.home-perform__grid p {
+	@include font-size(15px);
+	line-height: 1.333;
+
+	@include bp-min-width($small) {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+.home-perform__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	margin-bottom: 18px;
+}
+
+.home-perform__grid--usa img {
+	height: 64px;
+}
+
+.home-perform__grid--customized img {
+	height: 76px;
+}
+
+.home-perform__grid--service img {
+	height: 75px;
+}
+
+.home-products {
+	background: $purple;
+}
+
+.home-products .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*3;
+		padding-bottom: $base*3;
+	}
+}
+
+.home-products .section-title {
+	color: #fff;
+}
+
+.home-products__grid .col-1-5 a {
+	display: block;
+	height: 400px;
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: $purple;
+}
+
+.home-products__grid .col-1-5 a:hover {
+	border-color: $turq;
+}
+
+.home-products__footer {
+	text-align: center;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*2;
+	}
+}
+
+.home-contact {
+	overflow: hidden;
+	background: $purple;
+	background-position: 110% center;
+	color: #fff;
+}
+
+.home-contact .container {
+	position: relative;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*8;
+		padding-bottom: $base*10;
+		padding-left: 112px;
+	}
+}
+
+.home-contact__title {
+	margin-bottom: 12px;
+	@include bp-min-width($medium) {
+		@include font-size(72px);
+		font-weight: $weight-light;
+	}
+}
+
+.home-contact__subtitle {
+	max-width: 400px;
+	margin-bottom: $base;
+}
+
+.home-contact__icon {
+	@include vertical-center;
+	right: -80px;
+}

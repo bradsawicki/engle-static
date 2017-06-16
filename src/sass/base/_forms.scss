@@ -1,0 +1,87 @@
+
+.form-item {
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"],
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid $grey;
+  outline: none;
+  font-family: $sans;
+  font-size: 1em;
+  line-height: normal;
+}
+
+textarea {
+  width: 100%;
+  height: $base*4;
+  padding: 12px 20px;
+  border: 1px solid $grey;
+  outline: none;
+  font-family: $sans;
+  font-size: 1em;
+  line-height: normal;
+}
+
+::placeholder {}
+
+
+/** Select ============**/
+
+select {
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  width: 100%;
+  height: 40px;
+  padding: 0 60px 0 30px;
+  border: 1px solid $grey;
+  border-radius: 0;
+  outline: none;
+  font-family: $sans;
+}
+
+.form-item--select .form-item--container {
+  position: relative;
+
+  &:before {
+    content: '';
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 16px;
+    height: 1px;
+    background: $grey;
+  }
+
+  &:after {
+    content: '';
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+    right: 19px;
+    width: 16px;
+    height: 1px;
+    background: $grey;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/** Errors ============**/
+
+.form-error {}

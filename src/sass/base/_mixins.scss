@@ -1,0 +1,81 @@
+
+// Clearfix
+@mixin cf {
+  &:before, &:after {
+    content: '';
+    display: block;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom:1;
+}
+
+
+// GLOBAL TRANSITION
+@mixin global-transition($speed) {
+  transition: all $speed ease-in;
+}
+
+
+// CENTER ALIGN
+@mixin vertical-center {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+}
+
+@mixin horizontal-center {
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+}
+
+@mixin absolute-center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@mixin fixed-center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+
+// REMs
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+@mixin line-height($size) {
+  line-height: calculateRem($size);
+}
+
+
+// TRIANGLE
+@mixin down-triangle($size, $color) {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+
+@mixin up-triangle($size, $color) {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size solid $color;
+}
