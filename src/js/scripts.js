@@ -1,5 +1,25 @@
 $(function(){
 
+  var scrollPageTop = function() {
+    var scrollBtn = $('#scroll-top');
+
+    $(window).scroll(function() {
+      var scrollPosition = $(this).scrollTop();
+
+      if(scrollPosition > 500) {
+        scrollBtn.addClass('js-is-visible');
+      } else if(scrollPosition < 500) {
+        scrollBtn.removeClass('js-is-visible');
+      }
+    });
+
+    scrollBtn.bind('click', function(e) {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
+  }
+
   var mobileNav = function() {
     var body = $('body');
     var mobileNavTrigger = $('.nav-toggle');
@@ -23,6 +43,7 @@ $(function(){
     });
   }
 
+  scrollPageTop();
   mobileNav();
   productFilterToggle();
 
