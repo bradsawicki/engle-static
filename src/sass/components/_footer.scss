@@ -68,6 +68,10 @@
 	margin-bottom: $base;
 }
 
+.footer-contact__email {
+	margin-bottom: $base;
+}
+
 .footer-contact a {
 	color: $grey;
 }
@@ -76,4 +80,5 @@
 	@include font-size(12px);
 	width: 100%;
 	text-transform: uppercase;
+	line-height: 1.5;
 }
