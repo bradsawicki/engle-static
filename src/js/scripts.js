@@ -33,18 +33,19 @@ $(function(){
     });
   }
 
-  var productFilterToggle = function() {
-    var productFilterTrigger = $('.product-filter-toggle');
-    var productFilterCategories = $('.product-filter-categories');
-
-    productFilterTrigger.bind('click', function(e){
-      e.preventDefault();
-      $(this).parent().find(productFilterCategories).slideToggle();
-    });
-  }
+  $('#hero-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: 'linear',
+    arrows: false,
+    pauseOnHover: false
+  });
 
   scrollPageTop();
   mobileNav();
-  productFilterToggle();
 
 });

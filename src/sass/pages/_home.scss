@@ -3,15 +3,13 @@
 	overflow: hidden;
 	position: relative;
 	background-color: $purple;
-	background-image: $home-hero-01;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 	color: #fff;
+}
 
+.hero-slider {
 	@include bp-min-width($large) {
-		background-position: center left 400px;
-		background-size: auto 100%;
+		max-width: 1500px;
+		margin: 0 auto;
 	}
 }
 
@@ -21,7 +19,6 @@
 	padding-top: $base*2;
 	padding-bottom: $base*2;
 	background-color: $purple;
-	background-image: $home-hero-01;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -31,11 +28,21 @@
 	}
 
 	@include bp-min-width($large) {
-		max-width: 1500px;
-		margin: 0 auto;
 		background-position: center left 400px;
 		background-size: auto 100%;
 	}
+}
+
+.slide-01 {
+	background-image: $home-hero-01;
+}
+
+.slide-02 {
+	background-image: $home-hero-02;
+}
+
+.slide-03 {
+	background-image: $home-hero-03;
 }
 
 .home-hero .slide:before {
