@@ -105,31 +105,55 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
 }
 
-.js-is-active .nav-toggle__label {
-  display: none;
-}
-
-.nav-toggle.js-is-active:before,
-.nav-toggle.js-is-active:after {
-  content: '';
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
+.nav-toggle__bar,
+.nav-toggle__bar:before,
+.nav-toggle__bar:after {
   width: 30px;
   height: 2px;
   background: #fff;
 }
 
-.nav-toggle.js-is-active:before {
+.nav-toggle__bar {
+  position: relative;
+}
+
+.nav-toggle__bar:before,
+.nav-toggle__bar:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle__bar:before {
+  top: -8px;
+}
+
+.nav-toggle__bar:after {
+  bottom: -8px;
+}
+
+.js-is-active .nav-toggle__bar {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+
+.js-is-active .nav-toggle__bar:before,
+.js-is-active .nav-toggle__bar:after {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.js-is-active .nav-toggle__bar:before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.nav-toggle.js-is-active:after {
+.js-is-active .nav-toggle__bar:after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
