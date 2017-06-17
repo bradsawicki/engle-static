@@ -15,7 +15,31 @@
 	}
 }
 
-.home-hero__gradient {
+.home-hero .slide {
+	position: relative;
+	width: 100%;
+	padding-top: $base*2;
+	padding-bottom: $base*2;
+	background-color: $purple;
+	background-image: $home-hero-01;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@include bp-min-width($medium) {
+		height: 720px;
+	}
+
+	@include bp-min-width($large) {
+		max-width: 1500px;
+		margin: 0 auto;
+		background-position: center left 400px;
+		background-size: auto 100%;
+	}
+}
+
+.home-hero .slide:before {
+	content: '';
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -33,24 +57,30 @@
 	}
 }
 
-.home-hero .container {
-	position: relative;
-	padding-top: $base*2;
-	padding-bottom: $base*2;
-
-	@include bp-min-width($medium) {
-		height: 720px;
+.home-hero .slide:after {
+	@include bp-min-width(1500px) {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 200px;
+		height: 100%;
+		background: linear-gradient(to left, $purple, transparent);
 	}
 }
 
 .home-hero__content {
+	position: relative;
 	max-width: 722px;
+	padding-right: 20px;
+	padding-left: 20px;
 
 	@include bp-min-width($medium) {
 		@include vertical-center;
 	}
 
-	@include bp-min-width($xlarge) {
+	@include bp-min-width($large) {
 		padding-left: 82px;
 	}
 }
@@ -173,7 +203,7 @@
 }
 
 .home-products__grid a:hover {
-	box-shadow: inset 2px 2px $turq, inset -2px -2px $turq;
+	box-shadow: inset 4px 4px $turq, inset -4px -4px $turq;
 }
 
 .home-products__grid--light-system a {
@@ -194,7 +224,10 @@
 .home-products__grid--chair-mount-cupsidors a {
 	background-image: $home-product-chair-mount-cupsidors;
 	background-size: 110px auto;
-	background-position-y: 20px;
+
+	@include bp-max-width($medium) {
+		background-position-y: 20px;
+	}
 }
 
 .home-products__grid--assistant-arms a {
