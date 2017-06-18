@@ -64,11 +64,9 @@
 	line-height: 2;
 }
 
-.footer-contact__address {
-	margin-bottom: $base;
-}
-
-.footer-contact__email {
+.footer-contact__address,
+.footer-contact__email,
+.footer-social {
 	margin-bottom: $base;
 }
 
