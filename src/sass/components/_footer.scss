@@ -76,6 +76,10 @@
 	color: $grey;
 }
 
+.footer-social a:hover .icon-social {
+	fill: $purple;
+}
+
 .footer-copyright {
 	@include font-size(12px);
 	width: 100%;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="45" cy="45" r="45"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-facebook">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+            <path d="M54.5953112,90 L54.5953112,58.069899 L65.3132348,58.069899 L66.9178495,45.6259489 L54.5953112,45.6259489 L54.5953112,37.6810366 C54.5953112,34.0782226 55.5956466,31.6231067 60.7622957,31.6231067 L67.3519048,31.6200173 L67.3519048,20.4902817 C66.2119302,20.338903 62.300489,20 57.7498588,20 C48.2491438,20 41.74511,25.7990414 41.74511,36.448999 L41.74511,45.6259489 L31,45.6259489 L31,58.069899 L41.74511,58.069899 L41.74511,90 L54.5953112,90 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
