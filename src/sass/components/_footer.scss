@@ -74,6 +74,15 @@
 	color: $grey;
 }
 
+.icon-social {
+	width: 48px;
+	height: 48px;
+}
+
+.footer-social a {
+	margin-right: 10px;
+}
+
 .footer-social a:hover .icon-social {
 	fill: $purple;
 }
