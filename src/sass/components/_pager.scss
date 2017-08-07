@@ -1,0 +1,27 @@
+
+.pager {
+	@include bp-min-width($medium) {
+		padding-bottom: $base*4;
+	}
+}
+
+.pager ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.pager li {
+	margin-left: 12px;
+}
+
+.pager a {
+	display: block;
+	padding: 0 5px;
+	font-weight: $weight-bold;
+}
+
+.pager a:hover,
+.pager .is-current a {
+	background: $purple;
+	color: white;
+}

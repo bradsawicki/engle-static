@@ -10,15 +10,29 @@ Gutter: 30
 */
 
 .product-grid {
-  @include bp-min-width($medium) {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  @include bp-min-width($small) {
+    margin: 0 -15px;
+  }
+
+  @include bp-min-width($large) {
     margin: 0 -30px;
   }
 }
 
 .product-grid [class*='col-'] {
-  @include bp-min-width($medium) {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include bp-min-width($small) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include bp-min-width($large) {
     padding-left: 30px;
     padding-right: 30px;
   }
