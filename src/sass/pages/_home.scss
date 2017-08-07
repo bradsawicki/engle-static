@@ -92,20 +92,20 @@
 
 .home-hero__content {
 	position: relative;
-	max-width: 722px;
+	max-width: 700px;
 
 	@include bp-min-width($medium) {
 		@include vertical-center;
 	}
 
 	@include bp-min-width($large) {
-		padding-left: 82px;
+		padding-left: 68px;
 	}
 }
 
 .home-hero__title {
 	@include bp-min-width($medium) {
-		padding-right: 80px;
+		padding-right: 90px;
 	}
 }
 
@@ -115,10 +115,6 @@
 	@include bp-min-width($medium) {
 		margin-bottom: 30px;
 	}
-}
-
-.home-perform {
-	color: $purple;
 }
 
 .home-perform .container {
@@ -184,6 +180,7 @@
 
 .home-products .container {
 	@include bp-min-width($medium) {
+		max-width: 1170px;
 		padding-top: $base*3;
 		padding-bottom: $base*3;
 	}
@@ -205,7 +202,6 @@
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: right top;
-	color: $purple;
 
 	@include bp-min-width($medium) {
 		height: 400px;
@@ -280,7 +276,7 @@
 	}
 
 	@include bp-min-width($xlarge) {
-		padding-left: 112px;
+		padding-left: 98px;
 	}
 }
 
@@ -291,7 +287,7 @@
 
 .home-contact__icon {
 	@include vertical-center;
-	right: -80px;
+	right: -100px;
 
 	@include bp-max-width($medium) {
 		display: none;

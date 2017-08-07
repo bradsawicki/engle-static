@@ -1,5 +1,5 @@
 /**
-Class Naming Structure: block--element__modifier
+Class Naming Structure: block__element--modifier
 **/
 
 $sans: 'Roboto', Helvetica, arial, sans-serif;
@@ -14,6 +14,7 @@ $weight-black:  900;
 
 body {
   font: $weight-book 1em/1.5em $sans;
+  color: $purple;
 }
 
 h1,h2,h3,h4,h5 {

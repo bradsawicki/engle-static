@@ -1,4 +1,29 @@
 
+/*
+1170
+Column: 70
+Gutter: 30
+
+1146
+Column: 68
+Gutter: 30
+*/
+
+.product-grid {
+  @include bp-min-width($medium) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+  }
+}
+
+.product-grid [class*='col-'] {
+  @include bp-min-width($medium) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .flex-grid {
   @include bp-min-width($medium) {
     display: flex;

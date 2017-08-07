@@ -3,7 +3,6 @@
 	overflow: hidden;
 	position: relative;
 	background-color: $purple;
-	color: #fff;
 }
 
 .chair-hero .container {
@@ -35,7 +34,6 @@
 .chair-hero__title {
 	position: relative;
 	padding-bottom: $base;
-	color: $purple;
 	text-align: center;
 }
 
@@ -59,7 +57,7 @@
 .chair-intro__header,
 .chair-intro__highlights {
 	@include bp-min-width($large) {
-		padding-left: 80px;
+		padding-left: 68px;
 	}
 }
 
@@ -97,7 +95,7 @@
 	}
 
 	@include bp-min-width($large) {
-		padding-left: 80px;
+		padding-left: 68px;
 	}
 }
 

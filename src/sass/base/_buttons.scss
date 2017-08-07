@@ -1,9 +1,7 @@
 
 a {
   @include global-transition(.15s);
-
-	&:hover {
-	}
+  color: $purple;
 }
 
 @mixin btn {
@@ -18,7 +16,6 @@ a {
 @mixin btn--turq {
   background: $turq;
   border: 2px solid $turq;
-  color: $purple;
 
   &:hover {
     background: transparent;

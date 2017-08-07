@@ -1,7 +1,7 @@
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1146px;
   margin: 0 auto;
 
   @include bp-max-width($medium) {
@@ -11,6 +11,10 @@
   @include bp-min-width($medium) {
     width: 94%;
   }
+}
+
+.container--narrow {
+  max-width: 1010px;
 }
 
 .bg--purple {
