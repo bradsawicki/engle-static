@@ -108,6 +108,7 @@ em {
 .body-content p,
 .body-content ul,
 .body-content ol {
+  @include font-units(15px, 22px);
 }
 
 .body-content p:not(:last-child),
