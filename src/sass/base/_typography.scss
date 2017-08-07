@@ -29,8 +29,15 @@ em {
 }
 
 .title__h1 {
-  @include bp-min-width($medium) {
-  }
+	@include font-size(36px);
+	margin-bottom: 18px;
+	font-style: italic;
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+
+	@include bp-min-width($medium) {
+		@include font-size(56px);
+	}
 }
 
 .title__h2 {
@@ -72,6 +79,16 @@ em {
   width: 200px;
   height: 4px;
   background: $turq;
+}
+
+.title--light {
+	@include font-size(48px);
+	margin-bottom: 12px;
+	font-weight: $weight-light;
+
+	@include bp-min-width($medium) {
+		@include font-size(72px);
+	}
 }
 
 .paragraph--large {

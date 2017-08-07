@@ -1,0 +1,15 @@
+
+.cta-section {
+	text-align: center;
+}
+
+.cta-section .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*6;
+		padding-bottom: $base*6;
+	}
+}
+
+.cta-section p {
+	margin-bottom: $base*2;
+}

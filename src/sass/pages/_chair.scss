@@ -1,0 +1,191 @@
+
+.chair-hero {
+	overflow: hidden;
+	position: relative;
+	background-color: $purple;
+	color: #fff;
+}
+
+.chair-hero .container {
+	padding-top: $base*2;
+	padding-bottom: $base*4;
+
+	@include bp-min-width($medium) {
+		height: 720px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.chair-hero__slider {
+	width: 100%;
+	background-image: $chair-hero;
+	background-color: $purple;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@include bp-min-width($large) {
+		height: 720px;
+		background-image: $chair-hero-2x;
+	}
+}
+
+.chair-hero__title {
+	position: relative;
+	padding-bottom: $base;
+	color: $purple;
+	text-align: center;
+}
+
+.chair-hero__title:after {
+	@include horizontal-center;
+  content: '';
+  bottom: 0;
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: $turq;
+}
+
+.chair-intro .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*6;
+		padding-bottom: $base*6;
+	}
+}
+
+.chair-intro__header,
+.chair-intro__highlights {
+	@include bp-min-width($large) {
+		padding-left: 80px;
+	}
+}
+
+.chair-intro__header {
+	margin-bottom: $base*2;
+}
+
+.chair-intro__header p {
+	max-width: 960px;
+	margin-bottom: $base;
+
+	@include bp-min-width($medium) {
+		@include font-units(24px, 27px);
+	}
+}
+
+.chair-intro__list ul {
+	@include font-units(18px, 21px);
+}
+
+.chair-intro__list li:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.chair-features .container {
+	position: relative;
+	padding-bottom: $base*2;
+}
+
+.chair-features__header {
+	margin-bottom: $base*2;
+
+	@include bp-min-width($medium) {
+		margin-bottom: $base*4;
+	}
+
+	@include bp-min-width($large) {
+		padding-left: 80px;
+	}
+}
+
+.chair-features__subtitle {
+	@include font-units(22px, 24px);
+	text-transform: uppercase;
+	font-weight: $weight-bold;
+}
+
+.chair-features__visuals {
+	@include bp-max-width($medium) {
+		position: relative;
+	}
+}
+
+.chair-features__image {
+	@include bp-max-width($medium) {
+		position: relative;
+		z-index: 10;
+		max-width: 240px;
+		margin: 0 auto $base;
+	}
+
+	@include bp-min-width($medium) {
+		position: absolute;
+		left: 40px;
+		bottom: 0;
+		z-index: 10;
+		width: 405px;
+		max-width: 40%;
+	}
+
+	@include bp-min-width($large) {
+		left: 100px;
+		bottom: 40px;
+	}
+}
+
+.chair-features__icon {
+	position: absolute;
+	left: -20%;
+	bottom: 0;
+
+	@include bp-max-width($medium) {
+		top: 0;
+		left: -150px;
+		width: 320px;
+	}
+}
+
+.chair-features__list {
+	@include bp-min-width($medium) {
+		padding-left: 50%;
+	}
+}
+
+.chair-features__list-item {
+	margin-bottom: $base;
+	padding: 6px 0 6px 20px;
+	border-left: 4px solid $turq;
+
+	@include bp-min-width($medium) {
+		max-width: 360px;
+	}
+
+	@include bp-min-width($large) {
+		margin-bottom: $base*2.5;
+	}
+}
+
+.chair-features__list-item:last-child {
+	@include bp-min-width($medium) {
+		max-width: 480px;
+	}
+}
+
+.chair-features__list-item:nth-child(2) {
+	margin-left: 40px;
+
+	@include bp-min-width($medium) {
+		margin-left: 80px;
+	}
+}
+
+.chair-features__list-item .title__h3 {
+	margin-bottom: 4px;
+}
+
+.chair-features__list-item p {
+	@include font-units(15px, 18px);
+}
