@@ -48,6 +48,8 @@
 }
 
 .chair-intro .container {
+	padding-bottom: $base;
+
 	@include bp-min-width($medium) {
 		padding-top: $base*6;
 		padding-bottom: $base*6;
@@ -62,7 +64,11 @@
 }
 
 .chair-intro__header {
-	margin-bottom: $base*2;
+	margin-bottom: $base;
+
+	@include bp-min-width($medium) {
+		margin-bottom: $base*3;
+	}
 }
 
 .chair-intro__header p {
@@ -71,6 +77,34 @@
 
 	@include bp-min-width($medium) {
 		@include font-units(24px, 27px);
+	}
+}
+
+.chair-intro__highlights {
+	@include bp-min-width($medium) {
+		display: flex;
+	}
+}
+
+.chair-intro__image {
+	margin-bottom: $base;
+
+	@include bp-min-width($medium) {
+		width: 40%;
+		padding: 0 30px;
+	}
+}
+
+.chair-intro__image img {
+	@include bp-max-width($medium) {
+		max-width: 300px;
+	}
+}
+
+.chair-intro__list {
+	@include bp-min-width($medium) {
+		width: 60%;
+		padding-left: 30px;
 	}
 }
 
@@ -84,7 +118,10 @@
 
 .chair-features .container {
 	position: relative;
-	padding-bottom: $base*2;
+
+	@include bp-min-width($medium) {
+		padding-bottom: $base*4;
+	}
 }
 
 .chair-features__header {
@@ -121,14 +158,17 @@
 
 	@include bp-min-width($medium) {
 		position: absolute;
-		left: 40px;
+		left: -20px;
 		bottom: 0;
 		z-index: 10;
 		width: 405px;
-		max-width: 40%;
 	}
 
 	@include bp-min-width($large) {
+		left: 40px;
+	}
+
+	@include bp-min-width($xlarge) {
 		left: 100px;
 		bottom: 40px;
 	}
@@ -153,7 +193,7 @@
 }
 
 .chair-features__list-item {
-	margin-bottom: $base;
+	margin-bottom: $base*2;
 	padding: 6px 0 6px 20px;
 	border-left: 4px solid $turq;
 
@@ -167,6 +207,8 @@
 }
 
 .chair-features__list-item:last-child {
+	margin-bottom: 0;
+
 	@include bp-min-width($medium) {
 		max-width: 480px;
 	}

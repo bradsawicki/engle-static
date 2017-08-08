@@ -46,6 +46,16 @@ a {
   @include btn--outline;
 }
 
+@mixin cta-link {
+  text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 1px solid $purple;
+
+  &:hover {
+    border-color: white;
+  }
+}
+
 input[type="submit"],
 input[type="button"],
 button {
