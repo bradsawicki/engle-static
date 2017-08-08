@@ -1,0 +1,81 @@
+
+.contact-hero .container {
+	padding-top: $base;
+	padding-bottom: 0;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*4;
+		padding-bottom: $base*2;
+	}
+}
+
+.contact-form .container {
+	@include bp-min-width($medium) {
+		padding-bottom: $base*4;
+	}
+}
+
+.flex-grid .contact-grid__form {
+	@include bp-min-width($medium) {
+		padding-right: 40px;
+	}
+}
+
+.contact-grid__form {
+	@include bp-max-width($medium) {
+		margin-bottom: $base;
+	}
+}
+
+.contact-info-wrapper {
+	padding: 20px 30px;
+	border: 4px solid $turq;
+}
+
+.contact-info h3 {
+	@include font-size(18px);
+	margin-bottom: 18px;
+	color: $turq;
+	font-style: italic;
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+}
+
+.contact-info h4 {
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+}
+
+.contact-info h4,
+.contact-info p {
+	line-height: 1.25;
+}
+
+.contact-info p:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.contact-links {
+	padding-top: 12px;
+}
+
+.contact-links ul {
+	text-align: center;
+}
+
+.contact-links li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.contact-links a {
+	@include font-size(12px);
+	border-bottom: 1px solid white;
+	color: white;
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+
+	&:hover {
+		border-color: $purple;
+	}
+}
