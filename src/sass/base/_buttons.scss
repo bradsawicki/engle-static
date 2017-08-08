@@ -64,3 +64,9 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+input[type="submit"],
+input[type="button"] {
+  @include btn;
+  @include btn--outline;
+}

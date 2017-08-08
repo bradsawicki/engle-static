@@ -58,8 +58,9 @@ em {
 }
 
 .title__h4 {
-  @include bp-min-width($medium) {
-  }
+  @include font-size(15px);
+  font-weight: $weight-bold;
+  text-transform: uppercase;
 }
 
 .title__h5 {

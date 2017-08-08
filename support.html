@@ -49,105 +49,141 @@
 
 <main class="main">
 
-  <section class="home-hero">
-
-    <div id="hero-slider" class="home-hero__slider hero-slider">
-      <div class="slide slide-01"></div>
-      <div class="slide slide-02"></div>
-      <div class="slide slide-03"></div>
-    </div>
+  <section class="support-hero">
+    <div class="support-hero__bg"></div>
 
     <div class="container">
-      <div class="home-hero__content">
-        <h1 class="home-hero__title title__h1">The Engle Traverse Chair&trade;</h1>
-        <p class="home-hero__subtitle paragraph--large">Engle is the only company that makes the fully programmable Traverse Chair. Engineered to fit in the smallest spaces, the Engle Traverse Chair™ has a footprint 10" smaller than a standard dental chair.</p>
-        <p><a href="http://www.engledental.com/the-traverse-chair/" class="btn btn--turq">Learn More</a></p>
-      </div>
-    </div>
 
+      <div class="support-hero__content">
+        <h1 class="support-hero__title title__h1">Welcome to Engle Support</h1>
+        <p class="support-hero__subtitle paragraph--large">Over the coming months we will add various materials that will assist you in operating and maintaining your equipment. Please contact us with any questions.</p>
+        <p><a href="#tech-support" class="btn btn--turq">Contact Us</a></p>
+      </div>
+
+    </div>
   </section>
 
-  <section class="home-perform">
-    <div class="container">
+  <section class="video-tutorials">
+    <div class="container container--narrow">
+      <h2 class="video-tutorials__title title__h2">Video Tutorials</h2>
 
-      <h2 class="section-title">Engineered to Perform</h2>
-
-      <div class="home-perform__grid flex-grid">
-        <div class="home-perform__grid--usa col-1-3">
-          <div class="home-perform__icon">
-            <img src="dist/images/icon-flag.svg" alt="Made in USA" />
+      <div class="video-grid flex-grid">
+        <div class="video-grid__item col-1-2">
+          <div class="video-embed">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/yPQfcG-eimk" frameborder="0" allowfullscreen></iframe>
           </div>
-          <h3 class="title__h3">Made in USA</h3>
-          <p>Handcrafted in Hillsboro, Oregon, Engle products are engineered and manufactured under our own roof. This ensures a level of quality you can rely on.</p>
+          <h3 class="video-title title__h4">Quick Disconnect – Accessing &amp; Tightening</h3>
         </div>
-        <div class="home-perform__grid--customized col-1-3">
-          <div class="home-perform__icon">
-            <img src="dist/images/icon-customized.svg" alt="Customized for You" />
+        <div class="video-grid__item col-1-2">
+          <div class="video-embed">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/eHpV08wI-bw" frameborder="0" allowfullscreen></iframe>
           </div>
-          <h3 class="title__h3">Customized for You</h3>
-          <p>Our systems are available in a wide range of standard and customizable options. With four unique upholstery patterns, a wide range of standard and special-order colors, two-tone combinations, and a variety of fabrics you can design your chair to suit your style.</p>
-        </div>
-        <div class="home-perform__grid--service col-1-3">
-          <div class="home-perform__icon">
-            <img src="dist/images/icon-trophy.svg" alt="World-Class Service" />
-          </div>
-          <h3 class="title__h3">World-Class Service</h3>
-          <p>We give you access to a team of technicians and the manufacturing team itself. Fast and efficient problem-solving, regardless of where you are.</p>
+          <h3 class="video-title title__h4">Quick Disconnect – Accessing &amp; Tightening</h3>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section class="home-products">
-    <div class="container">
+  <section id="tech-support" class="tech-support bg--purple">
+    <div class="container container--narrow">
 
-      <h2 class="section-title">Engle Dental Products</h2>
+      <h3 class="tech-support__title title__h2"><span>How can we help you?</span></h3>
 
-      <div class="home-products__grid flex-grid">
-        <div class="home-products__grid--light-system col-1-5">
-          <a href="http://www.engledental.com/product-category/dental-light-systems/">
-            <h3 class="title__h3">Light Systems</h3>
-          </a>
+      <div class="tech-support-grid flex-grid">
+        <div class="tech-support-grid__form col-2-3">
+          <form class="support-form">
+
+            <nf-fields-wrap>
+
+              <nf-field>
+                <div class="nf-field-container textbox-container label-above">
+                  <div class="field-wrap textbox-wrap">
+                  	<div class="nf-field-label">
+                      <label for="nf-field-1" class="">First Name <span class="ninja-forms-req-symbol">*</span></label>
+                    </div>
+                		<div class="nf-field-element">
+                    	<input id="nf-field-1" name="nf-field-1" class="ninja-forms-field nf-element" type="text" value="" placeholder="First Name">
+                    </div>
+                	</div>
+                </div>
+              </nf-field>
+
+              <nf-field>
+                <div class="nf-field-container textbox-container label-above">
+                  <div class="field-wrap textbox-wrap">
+                  	<div class="nf-field-label">
+                      <label for="nf-field-2" class="">Last Name <span class="ninja-forms-req-symbol">*</span></label>
+                    </div>
+                		<div class="nf-field-element">
+                    	<input id="nf-field-2" name="nf-field-2" class="ninja-forms-field nf-element" type="text" value="" placeholder="Last Name">
+                    </div>
+                	</div>
+                </div>
+              </nf-field>
+
+              <nf-field>
+                <div class="nf-field-container textbox-container label-above">
+                  <div class="field-wrap textbox-wrap">
+                  	<div class="nf-field-label">
+                      <label for="nf-field-3" class="">Phone <span class="ninja-forms-req-symbol">*</span></label>
+                    </div>
+                		<div class="nf-field-element">
+                    	<input id="nf-field-3" name="nf-field-3" class="ninja-forms-field nf-element" type="text" value="" placeholder="Phone Number">
+                    </div>
+                	</div>
+                </div>
+              </nf-field>
+
+              <nf-field>
+                <div class="nf-field-container textbox-container label-above">
+                  <div class="field-wrap textbox-wrap">
+                  	<div class="nf-field-label">
+                      <label for="nf-field-3" class="">Email Address <span class="ninja-forms-req-symbol">*</span></label>
+                    </div>
+                		<div class="nf-field-element">
+                    	<input id="nf-field-3" name="nf-field-3" class="ninja-forms-field nf-element" type="text" value="" placeholder="Email Address">
+                    </div>
+                	</div>
+                </div>
+              </nf-field>
+
+              <nf-field>
+                <div class="nf-field-container textbox-container label-above">
+                  <div class="field-wrap textbox-wrap">
+                  	<div class="nf-field-label">
+                      <label for="nf-field-3" class="">Email Address <span class="ninja-forms-req-symbol">*</span></label>
+                    </div>
+                		<div class="nf-field-element">
+                    	<textarea placeholder="Enter Your Question"></textarea>
+                    </div>
+                	</div>
+                </div>
+              </nf-field>
+
+              <nf-field>
+                <div class="nf-field-container submit-container label-above">
+                  <div class="nf-field">
+                    <div id="nf-field-4-wrap" class="field-wrap submit-wrap" data-field-id="4">
+                      <div class="nf-field-element">
+                        <input id="nf-field-4" class="ninja-forms-field nf-element " type="button" value="Submit">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nf-field>
+
+            </nf-fields-wrap>
+
+          </form>
         </div>
-        <div class="home-products__grid--mobile-carts col-1-5">
-          <a href="http://www.engledental.com/product-category/mobile-carts/">
-            <h3 class="title__h3">Mobile Carts</h3>
-          </a>
+        <div class="tech-support-grid__contact-info col-1-3">
+          <p>Technical Support<br />
+          TOLL FREE: 800.547.1906<br />
+          Fax: 503.357.7286</p>
+          <p>Available 7:00am – 3:30pm pst<br />
+          MONDAY-FRIDAY</p>
         </div>
-        <div class="home-products__grid--utility-centers col-1-5">
-          <a href="http://www.engledental.com/product-category/utility-center-packages/">
-            <h3 class="title__h3">Utility Centers</h3>
-          </a>
-        </div>
-        <div class="home-products__grid--chair-mount-cupsidors col-1-5">
-          <a href="http://www.engledental.com/product-category/chair-mount-cuspidors/">
-            <h3 class="title__h3">Chair Mount Cupsidors</h3>
-          </a>
-        </div>
-        <div class="home-products__grid--assistant-arms col-1-5">
-          <a href="http://www.engledental.com/product-category/assistants-arms/">
-            <h3 class="title__h3">Assistant Arms</h3>
-          </a>
-        </div>
-      </div>
-
-      <div class="home-products__footer">
-        <p><a href="http://www.engledental.com/shop/" class="btn btn--outline">Explore More</a></p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="home-contact">
-    <div class="container">
-
-      <h2 class="home-contact__title title--light">Get in touch.</h2>
-      <p class="home-contact__subtitle paragraph--large">If you have a question or simply need help, we are here for you.</p>
-      <p><a href="http://www.engledental.com/contact-us/" class="btn btn--outline">Contact Us</a></p>
-
-      <div class="home-contact__icon">
-        <img src="dist/images/icon-logo-e.svg" alt="" />
       </div>
 
     </div>

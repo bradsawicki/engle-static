@@ -1,39 +1,71 @@
 
-.form-item {
-  margin-bottom: 12px;
+nf-fields-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  &:last-of-type {
-    margin-bottom: 0;
+nf-field {
+  width: 100%;
+}
+
+nf-field:first-child,
+nf-field:nth-child(2) {
+  width: 50%;
+}
+
+nf-field:first-child {
+  padding-right: 8px;
+}
+
+nf-field:nth-child(2) {
+  padding-left: 8px;
+}
+
+.nf-field-container {
+  margin-bottom: 18px;
+}
+
+label {
+  @include is-hidden;
+}
+
+input:not([type="submit"]):not([type="button"]) {
+  @include font-size(15px);
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  font-family: $sans;
+  line-height: normal;
+
+  @include bp-min-width($medium) {
+    @include font-size(18px);
+    padding: 0 20px;
   }
 }
 
-input[type="text"],
-input[type="email"],
-input[type="phone"],
-input[type="password"],
 textarea {
-  width: 100%;
-  height: 40px;
-  padding: 0 20px;
-  border: 1px solid $grey;
-  outline: none;
-  font-family: $sans;
-  font-size: 1em;
-  line-height: normal;
-}
-
-textarea {
+  @include font-size(15px);
   width: 100%;
   height: $base*4;
-  padding: 12px 20px;
-  border: 1px solid $grey;
+  padding: 12px;
+  border: none;
   outline: none;
   font-family: $sans;
-  font-size: 1em;
   line-height: normal;
+
+  @include bp-min-width($medium) {
+    @include font-size(18px);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
-::placeholder {}
+::placeholder {
+  color: $grey;
+  text-transform: uppercase;
+}
 
 
 /** Select ============**/
@@ -84,4 +116,12 @@ select::-ms-expand {
 
 /** Errors ============**/
 
-.form-error {}
+.nf-form-fields-required,
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-error-msg {
+  @include font-size(13px);
+  color: red;
+}

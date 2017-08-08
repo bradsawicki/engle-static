@@ -45,6 +45,8 @@ $(function(){
     pauseOnHover: false
   });
 
+  $(".body-content, .video-embed").fitVids();
+
   scrollPageTop();
   mobileNav();
 

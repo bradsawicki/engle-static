@@ -27,12 +27,17 @@
   overflow: hidden;
 }
 
-.is-hidden {
-  display: none;
+@mixin is-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-.is-visible {
-  display: block;
+.is-hidden {
+  @include is-hidden;
 }
 
 .scroll-top {

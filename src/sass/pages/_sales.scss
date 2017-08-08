@@ -62,3 +62,9 @@
 		text-align: right;
 	}
 }
+
+.sales-footer {
+	@include bp-min-width($medium) {
+		padding-top: $base;
+	}
+}

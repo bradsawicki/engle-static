@@ -63,7 +63,8 @@ gulp.task('fileinclude', function() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./'))
+    .pipe(browserSync.stream());
 });
 
 
@@ -73,7 +74,7 @@ gulp.task('bs-reload', function() {
 
 
 gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('src/**/*.html', ['fileinclude', 'bs-reload']);
+  gulp.watch('src/**/*.html', ['fileinclude']);
   gulp.watch('src/sass/**/*.scss', ['sass']);
   gulp.watch('src/js/**/*.js', ['scripts', 'bs-reload']);
   gulp.watch('src/images/**/*', ['images', 'bs-reload']);
