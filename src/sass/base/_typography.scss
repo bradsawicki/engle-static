@@ -42,8 +42,13 @@ em {
 }
 
 .title__h2 {
-  @include bp-min-width($medium) {
-  }
+  @include font-size(20px);
+	font-weight: $weight-bold;
+	text-transform: uppercase;
+
+	@include bp-min-width($medium) {
+		@include font-size(24px);
+	}
 }
 
 .title__h3 {

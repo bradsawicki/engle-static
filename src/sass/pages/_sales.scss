@@ -1,0 +1,64 @@
+
+.sales-hero .container {
+	padding-top: $base;
+	padding-bottom: 0;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*4;
+		padding-bottom: $base*2;
+	}
+}
+
+.sales-directory .container {
+	@include bp-min-width($medium) {
+		padding-bottom: $base*6;
+	}
+}
+
+.sales-region {
+	margin-bottom: $base*2;
+}
+
+.sales-region__title {
+	margin-bottom: $base;
+}
+
+.sales-region__title span {
+	border-bottom: 1px solid white;
+}
+
+.sales-table {
+	@include bp-min-width($medium) {
+		padding-left: 15px;
+	}
+}
+
+.sales-table a {
+	color: white;
+}
+
+.sales-table__row {
+	border-bottom: 2px solid $turq;
+
+	@include bp-min-width($medium) {
+		display: table;
+		width: 100%;
+	}
+}
+
+.sales-table__col {
+	font-weight: $weight-bold;
+
+	@include bp-min-width($medium) {
+		@include font-size(20px);
+		display: table-cell;
+		padding: 12px 10px;
+	  text-transform: uppercase;
+	}
+}
+
+.sales-table__col:last-child {
+	@include bp-min-width($medium) {
+		text-align: right;
+	}
+}
