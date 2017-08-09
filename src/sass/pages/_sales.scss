@@ -63,6 +63,12 @@
 	}
 }
 
+.icon-email {
+	fill: white;
+	width: 32px;
+	height: 20px;
+}
+
 .sales-footer {
 	@include bp-min-width($medium) {
 		padding-top: $base;
